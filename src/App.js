@@ -12,12 +12,12 @@ function App() {
   return (
     <div className={classes.root}>
       <Navbar></Navbar>
-      <HomePage  id="HomePage"></HomePage>
+      <HomePage title="Alexis Ezequiel Medina" id="HomePage"></HomePage>
       <Portafile title="My works"id="PortafilePage" gray={false}></Portafile>
       <Skills title="Skills"id="SkillsPage" gray={true}></Skills>
       <About title="About me" id="AboutPage" gray={false}></About>
       
-      <Contact id="ContactPage"></Contact>
+      <Contact title="Contact me" id="ContactPage" gray={true}></Contact>
       
       
       

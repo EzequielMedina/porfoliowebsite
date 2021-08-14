@@ -44,11 +44,14 @@ const Navbar = () => {
       icon: <ContactMailTwoToneIcon fontSize="large" />,
     },
   ];
+  const scrolltotop =()=>{
+    scroll.scrollToTop()
+  }
   return (
     <>
       <AppBar position="sticky" className={classes.root}>
         <Toolbar className={classes.toolbar}>
-          <img src={logo} className={classes.logo} alt="Logo" />
+          <img src={logo} className={classes.logo} alt="Logo" onClick={scrolltotop}/>
           <List className={classes.menu}>
             {links.map(({ id, text }, index) => (
               <Link
@@ -110,6 +113,9 @@ const useStyles = makeStyles((theme) => ({
     diplay: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
+    "& img":{
+      cursor: "pointer"
+    }
   },
   logo: {
     height: "3rem",
@@ -153,12 +159,12 @@ const useStyles = makeStyles((theme) => ({
   },
   sidebar:{
   
+    paddingTop:15,
     width: "40vw",
     [theme.breakpoints.down("sm")]:{
       width: "60vw",
     },
     "& h5":{
-      
       margin:theme.spacing(3, 0, 0, 4),
       fontSize: "1.3rem",
       color: "#333",
@@ -179,6 +185,8 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     top: 0,
     right: 10,
+    
+    
     
   },
 }));

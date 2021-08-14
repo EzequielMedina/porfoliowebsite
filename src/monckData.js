@@ -1,11 +1,12 @@
 
 import CalculadoraJS from "./img/CalculadoraJS.jpg";
+import calcu from "./Calculadora 2.0/index.html";
 const mockData = [
 
     {
         title: "Calculadora JS",
         image: CalculadoraJS,
-        repositorio: "https://github.com/EzequielMedina/MiPortafolio/tree/gh-pages/Calculadora%202.0",
+        repositorio: {calcu},
         video: "",
     }
 

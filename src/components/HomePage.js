@@ -2,6 +2,7 @@
 import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 import imagen from "../img/img_30298_programhtml.jpg";
+import '../index.css';
 const HomePage = ({title,id}) => {
     const classes = useStyles();
     return(
@@ -20,7 +21,7 @@ const HomePage = ({title,id}) => {
                 <h2>{title}</h2>
                 </Typography>
                 
-              <Typography variant="h4"  class="textoheader">
+                <Typography variant="h4"  class="textoheader">
                 <h3>I am a programmer</h3>
                 </Typography>
             </div>
@@ -61,13 +62,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     height: "60%",
     width: "100%",
-    alignItems: "center",
+    alignItems:"center",
     justifyContent: "center",
     flexDirection: "column",
     textAlign: "center",
     maxWidth: "80vw",
     margin: "0 auto",
-    color: "#fff"
+    
+    
   },
   
  
